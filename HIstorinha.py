@@ -68,27 +68,33 @@ def pergunta_3():
 
 def pergunta_4():
     time.sleep(0.5)
-    p4 = input("O que você decide fazer?\n1)Esperar o sorvete chegar.\n2)Voltar para casa.(seus sogros chegarão às 14:00pm)\n\nResposta: ")
+    p4 = input("O que você decide fazer?\n1)Esperar o sorvete chegar.\n2)Voltar para casa.(seus sogros chegarão às 14:00pm)\n\nResposta:")
+    
     if(p4=="1"):
-        print("Você escolheu esperar o sorvete chega.\n\nQuando o sabor de sorvete chegou, você o comprou e sanou o seu desejo. Ao olhar o relógio vê que já são 13:30p. Apressadamente você chega em casa às 13:50pm e logo em seguida, sua namorada e sogros chegam.\n\nNo final de tudo, você sanou o seu intenso desejo por sorvete, e por sorte teve a aprovação do seu relacionamento por parte dos seus sogros.\n\nVocê obteve o melhor final da história.\n\n")
+        print("Você escolheu esperar o sorvete chega.\n\nQuando o sabor de sorvete chegou, você o comprou e sanou o seu desejo. Ao olhar o relógio vê que já são 13:30p. Apressadamente você chega em casa às 13:50pm e logo em seguida, sua namorada e sogros chegam.\n\nNo final de tudo, você sanou o seu intenso desejo por sorvete, e por sorte teve a aprovação do seu relacionamento por parte dos seus sogros\n\nVocê obteve o melhor final da história.\n\n")
         time.sleep(0.5)
         reinicio()
         
     elif(p4=="2"):
-        print("Você escolheu voltar para casa e deixar o sorvete para outro dia.\nE no caminho de volta para casa, esquece que a via que o levava mais rápido estava congestionada, e quando chega nela, percebe que já são 13:30pm, e agora você teria que voltar todo o caminho e ir por outra rua.\nNo meio do caminho, recebe uma ligação da sua namorada furiosa, perguntando onde você está.\nLentamente você olha as horas, e percebe que já são 14:20pm.\n\nNo final de tudo, você não sanou a sua sede por sorvete, e não teve a aprovação dos seus sogros extremamente rigorosos.\n\nVocê obteve o pior final da história.")
+        print("Você escolheu voltar para casa e deixar o sorvete para outro dia.\nE no caminho de volta para casa, esquece que a via que o levava mais rápido estava congestionada, e quando chega nela, percebe que já são 13:30pm, e agora você teria que voltar todo o caminho e ir por outra rua.\nNo meio do caminho, recebe uma ligação da sua namorada furiosa, perguntando onde você está.\nLentamente você olha as horas, e percebe que já são 14:20pm.\n\nNo final de tudo, você não sanou a sua sede por sorvete, e não teve a aprovação dos seus sogros extremamente rigorosos\n\nVocê obteve o pior final da história.")
         time.sleep(0.5)
         reiniciar()
     else:
         pergunta_4()
     
 def reiniciar():
-    recomecar = int(input("Você deseja recomeçar a história?\n\nResposta: ")).upper()
+    recomecar=input("Você deseja recomeçar a história? \n\nResposta: ").upper()
     if(recomecar=="S"):
         acordar()
     elif(recomecar=="N"):
         print("Fim do programa.")
     else:
         reiniciar()
-
         
-acordar()
+    acordar()
+
+#Melhor final()
+#Final razoável(1,2,1)
+#Final mediano(1,2,2)
+#Final ruim(1,1)
+#Pior final() 1,2
