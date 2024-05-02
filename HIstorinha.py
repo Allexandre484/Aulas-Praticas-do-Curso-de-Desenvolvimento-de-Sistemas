@@ -82,10 +82,10 @@ def pergunta_4():
         pergunta_4()
     
 def reiniciar():
-    recomecar=input("Você deseja recomeçar a história? \n\nResposta: ").upper()
-    if(recomecar=="S"):
+    recomecar=input("Você deseja recomeçar a história? \n\nResposta:\n1)Sim.\n2)Não\n\nResposta: ").upper()
+    if(recomecar=="1"):
         acordar()
-    elif(recomecar=="N"):
+    elif(recomecar=="1"):
         print("Fim do programa.")
     else:
         reiniciar()
