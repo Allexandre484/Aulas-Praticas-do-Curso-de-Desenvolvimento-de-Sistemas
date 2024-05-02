@@ -31,7 +31,7 @@ def pergunta_1():
            print("Você decidiu ir comprar o sorvete primeiro e deixar a tarefa pra depois.\nIndo pelo caminho mais rápido até a sorveteria, você se depara com uma obra urbana que está prestes a começar, o que mais tarde provavelmente iria impedir a sua passagem por aquela via.\nChegando na sorveteria, você tem a sorte de encontrar uma última unidade do seu sabor de sorvete favorito, sanando assim o seu grande desejo.\nNa volta para casa, você se depara com a obra antes vista já em execução, congestionando a passagem por aquela via, e ao olhar o seu relógio, percebe que já são 13:00pm, e em 1hr seu sogros chegarão na sua casa.")
            time.sleep(0.5)
            print('')
-           pergunta_3()
+           pergunta_4()
     
     else:
         time.sleep(0.5)
@@ -60,7 +60,7 @@ def pergunta_3():
      elif(p3=="2"):
          print("Você escolheu dar a volta no quarterão e tentar ir por outro caminho.\n\nNo meio do caminho, você recebe uma ligação da sua namorada, furiosa, perguntando onde você está.\nCalmamente você olha as horas, e percebe que são 14:30")
          time.sleep(0.5)
-         print("No final, você tomou o sorvete e sanou o seu grande desejo, porém não teve o seu relacionamento aprovado.\n\nVocê objeteve um final mediano.")
+         print("No final, você tomou o sorvete e sanou o seu grande desejo, porém não teve o seu relacionamento aprovado.\n\nVocê objeteve um final mediano.\n\n")
          time.sleep(0.5)
          reiniciar()
      else:
@@ -74,9 +74,8 @@ def pergunta_4():
         print("Você escolheu esperar o sorvete chega.\n\nQuando o sabor de sorvete chegou, você o comprou e sanou o seu desejo. Ao olhar o relógio vê que já são 13:30p. Apressadamente você chega em casa às 13:50pm e logo em seguida, sua namorada e sogros chegam.\n\nNo final de tudo, você sanou o seu intenso desejo por sorvete, e por sorte teve a aprovação do seu relacionamento por parte dos seus sogros\n\nVocê obteve o melhor final da história.\n\n")
         time.sleep(0.5)
         reinicio()
-        
     elif(p4=="2"):
-        print("Você escolheu voltar para casa e deixar o sorvete para outro dia.\nE no caminho de volta para casa, esquece que a via que o levava mais rápido estava congestionada, e quando chega nela, percebe que já são 13:30pm, e agora você teria que voltar todo o caminho e ir por outra rua.\nNo meio do caminho, recebe uma ligação da sua namorada furiosa, perguntando onde você está.\nLentamente você olha as horas, e percebe que já são 14:20pm.\n\nNo final de tudo, você não sanou a sua sede por sorvete, e não teve a aprovação dos seus sogros extremamente rigorosos\n\nVocê obteve o pior final da história.")
+        print("Você escolheu voltar para casa e deixar o sorvete para outro dia.\nE no caminho de volta para casa, esquece que a via que o levava mais rápido estava congestionada, e quando chega nela, percebe que já são 13:30pm, e agora você teria que voltar todo o caminho e ir por outra rua.\nNo meio do caminho, recebe uma ligação da sua namorada furiosa, perguntando onde você está.\nLentamente você olha as horas, e percebe que já são 14:20pm.\n\nNo final de tudo, você não sanou a sua sede por sorvete, e não teve a aprovação dos seus sogros extremamente rigorosos\n\nVocê obteve o pior final da história.\n\n")
         time.sleep(0.5)
         reiniciar()
     else:
@@ -91,10 +90,10 @@ def reiniciar():
     else:
         reiniciar()
         
-    acordar()
+acordar()
 
-#Melhor final()
+#Melhor final(2,1)
 #Final razoável(1,2,1)
 #Final mediano(1,2,2)
 #Final ruim(1,1)
-#Pior final() 1,2
+#Pior final(2,2) 
