@@ -37,3 +37,48 @@ INSERT INTO dvd (codDVD,titDVD,precoDVD) VALUES (109,'A cabana',29.55);
 
 --Exercicio 7: Dê um desconto de 20% no filme "Star Wars";--
   UPDATE dvd SET precoDVD = precoDVD * 0.80  WHERE titDVD ='Star Wars';
+
+--Exercicio extra: Seu chefe pediu para você fazer um relatório em que se estipula um aumento de 23% no preço dos DVDs, 
+neste relatório ele deseja o preço atual, o preço reajustado e a diferença para saber exatamente quanto o preço de cada filme possivelmente irá aumentar.--
+  SELECT codDVD AS codigo, titDVD AS filmes, precoDVD AS preco, precoDVD*1.23 AS Reajustado , precoDVD*1.23-precoDVD AS diferenca FROM dvd;
+
+--Criação da estrutura na tabela_2--
+CREATE TABLE depto(
+codDep NUMBER(2) PRIMARY KEY,
+    nomeDep VARCHAR(15) NOT NULL,
+loc VARCHAR(10) NOT NULL
+);
+
+--Insert´s de dados na tabela_2--
+INSERT INTO depto VALUES (1,'Marketing','Ala 13');
+INSERT INTO depto VALUES (2,'Financeira','Ala 13');
+INSERT INTO depto VALUES (3,'Produção','Ala 2');
+INSERT INTO depto VALUES (4,'Pessoal','Ala 7');
+INSERT INTO depto VALUES (5,'Vendas','Ala 13');
+INSERT INTO depto VALUES (6,'Contabilidade','Ala 2');
+INSERT INTO depto VALUES (7,'Engenharia','Ala 21');
+INSERT INTO depto VALUES (8,'Informática','Ala 21');
+
+--Exercicio 1: Listar todos os departamentos, seus códigos e localizações;--
+    SELECT codDep AS Codigo, nomeDep AS depatamentos, loc AS endereco FROM depto;
+
+--Exercicio 2: Listar todos os nomes de departamento cadastrados;--
+    SELECT  nomeDep AS depatamentos FROM depto;
+
+--Exercicio 3: Listar todos os códigos de departamentos cadastrados;--
+    SELECT codDep AS Codigo FROM depto;
+
+--Exercicio 4: Listar todos os nomes de departramento e sua localização;--
+    SELECT nomeDep AS Departamentos, loc AS Endereco FROM depto;
+
+--Exercicio 5: Listar todos os nomes de departamentos, seus códigos que se localizam na Ala 2;--
+    SELECT codDep AS Codigo ,nomeDep AS Departamentos, loc AS Endereco FROM depto WHERE loc = 'Ala 2';
+
+--Exercicio 6: Listar todos os departamentos que se localizam na Ala 13;--
+    SELECT nomeDep AS Departamento, loc AS Endereco FROM depto WHERE loc = 'Ala 13';
+
+--Exercicio 7: Listar todos os departamentos com códigos acima de 4;--
+    SELECT codDep AS Codigo, nomeDep AS Departamento FROM depto WHERE codDep >4;
+
+--Exercicio 8: Listar todos os nomes de departamentos e localização com códigos = 2;--
+    SELECT codDep AS Codigo, nomeDep AS Departamento FROM depto WHERE codDep = 2;
