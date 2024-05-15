@@ -89,5 +89,10 @@ for i in range(1,num+1):
     for y in range(1,11):
        print('{} x {} = {}'.format(i,y,i*y))
 
-   
+
+#Exercicio 10:  Crie um programa em python que faça um triângulo da altura que o usuário escolher(Desafio)
+num=int(input("Insira o número correspondente a altura do triângulo: "))
+for i in range(num):
+    print(" "*(num-i)+"*"*(2*i+1))
+
    
